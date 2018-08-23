@@ -1,0 +1,29 @@
+extends layout2
+
+block content
+    br
+    br 
+    h1 Add Project
+    form(method='POST', action= '/new', enctype='multipart/form-data')
+        .form-group
+            label Title
+            input.form-control(type='text',name ='title',placeholder='title')
+        .form-group
+            label description
+            textarea.form-control(name ='description',placeholder='description')
+        .form-group
+            label Service
+            input.form-control(type='text',name ='service',placeholder='Service')
+        .form-group
+            label Client
+            input.form-control(type='text',name ='client',placeholder='Client')
+        
+        .form-group
+            label Project Image
+            input.form-control(type='file',name ='projectimage')
+        .form-group
+            label Date
+            input.form-control(type='date',name ='date')
+
+        input.btn.btn-default(type='submit',name='submit',value='submit')
+        

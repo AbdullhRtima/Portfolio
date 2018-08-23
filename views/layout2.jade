@@ -1,0 +1,44 @@
+html(lang='en')
+head
+link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+// Custom fonts for this template
+link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+// Plugin CSS
+link(href='/vendor/magnific-popup/magnific-popup.css', rel='stylesheet', type='text/css')
+link(href='/stylesheets/freelancer.min.css', rel='stylesheet')
+link(href='/stylesheets/dashboard.css', rel='stylesheet')
+body#page-top
+nav#mainNav.navbar.navbar-expand-lg.bg-secondary
+			.container
+				a.navbar-brand.js-scroll-trigger(href='#page-top')  Portfolio
+				button.navbar-toggler.navbar-toggler-right.text-uppercase.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+					| Menu
+					i.fa.fa-bars
+				#navbarResponsive.collapse.navbar-collapse
+					ul.navbar-nav.ml-auto
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='/admin') Dashboard
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='/new') Add project 
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='/') Visit site 
+
+
+block content
+//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+script(src='/javascripts/freelancer.min.js')
+// Bootstrap core JavaScript
+script(src='/vendor/jquery/jquery.min.js')
+script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
+// Plugin JavaScript
+script(src='/vendor/jquery-easing/jquery.easing.min.js')
+script(src='/vendor/magnific-popup/jquery.magnific-popup.min.js')
+// Contact Form JavaScript
+script(src='/javascripts/jqBootstrapValidation.js')
+script(src='/javascripts/contact_me.js')
+// Custom scripts for this template
+script(src='/javascripts/freelancer.min.js')

@@ -1,0 +1,31 @@
+extends layout2
+
+
+block content
+    br
+    br 
+    h1 Edit Project
+    form(method='POST', action= '/edit/#{row.id}', enctype='multipart/form-data')
+        .form-group
+            label Title
+            input.form-control(type='text', name ='title' , value='#{row.title}')
+        .form-group
+            label description
+            textarea.form-control(name ='description')
+              | #{row.description}
+        .form-group
+            label Service
+            input.form-control(type='text',name ='service',value='#{row.service}')
+        .form-group
+            label Client
+            input.form-control(type='text',name ='client',value='#{row.client}')
+        
+        .form-group
+            label Project Image
+            input.form-control(type='file',name ='projectimage' value='#{row.image}')
+        .form-group
+            label Date
+            input.form-control(type='date',name ='date' value='#{row.date}')
+
+        input.btn.btn-default(type='submit',name='submit',value='submit')
+        

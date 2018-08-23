@@ -1,0 +1,132 @@
+doctype html
+//html(lang='en')
+head
+title portfolio
+// Bootstrap core CSS
+link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+// Custom fonts for this template
+link(href='/vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+// Plugin CSS
+link(href='/vendor/magnific-popup/magnific-popup.css', rel='stylesheet', type='text/css')
+// Custom styles for this template
+link(href='/stylesheets/freelancer.min.css', rel='stylesheet')
+body#page-top
+		// Navigation
+nav#mainNav.navbar.navbar-expand-lg.bg-secondary.fixed-top.text-uppercase
+			.container
+				a.navbar-brand.js-scroll-trigger(href='#page-top') Abdullah Rtima 
+				button.navbar-toggler.navbar-toggler-right.text-uppercase.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+					| Menu
+					i.fa.fa-bars
+				#navbarResponsive.collapse.navbar-collapse
+					ul.navbar-nav.ml-auto
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#portfolio') Portfolio
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#about') About
+						li.nav-item.mx-0.mx-lg-1
+							a.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger(href='#contact') Contact
+						
+		// Header
+header.masthead.bg-primary.text-white.text-center
+			.container
+				img.img-fluid.mb-5.d-block.mx-auto(src='img/profile.png', alt='')
+				h1.text-uppercase.mb-0  Abdullah Rtima 
+				hr.star-light
+				h2.font-weight-light.mb-0  JavaScript Full Stack Web Developer
+block content
+		// About Section
+section#about.bg-primary.text-white.mb-0
+			.container
+				h2.text-center.text-uppercase.text-white About
+				hr.star-light.mb-5
+				.row
+					.col-lg-4.ml-auto
+						p.lead
+							| Freelancer Javascript full stack web developer . I have a great Skills to deal with all Nodejs from backend side also good understand of HTML5 ,HTML,CSS,React ,ReactNative for mobile applications  .   
+					.col-lg-4.mr-auto
+						p.lead
+							| I have create this WebSite as starting point! to share my work here hope you enjoy 
+				
+		// Contact Section
+section#contact
+			.container
+				h2.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+				hr.star-dark.mb-5
+				.row
+					.col-lg-8.mx-auto
+						// To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+						// The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
+						form#contactForm( method='POST' name='sentMessage', novalidate='novalidate')
+							.control-group
+								.form-group.floating-label-form-group.controls.mb-0.pb-2
+									label Name
+									input#name.form-control(type='text', placeholder='Name', required='required', data-validation-required-message='Please enter your name.')
+									p.help-block.text-danger
+							.control-group
+								.form-group.floating-label-form-group.controls.mb-0.pb-2
+									label Email Address
+									input#email.form-control(type='email', placeholder='Email Address', required='required', data-validation-required-message='Please enter your email address.')
+									p.help-block.text-danger
+							.control-group
+								.form-group.floating-label-form-group.controls.mb-0.pb-2
+									label Phone Number
+									input#phone.form-control(type='tel', placeholder='Phone Number', required='required', data-validation-required-message='Please enter your phone number.')
+									p.help-block.text-danger
+							.control-group
+								.form-group.floating-label-form-group.controls.mb-0.pb-2
+									label Message
+									textarea#message.form-control(rows='5', placeholder='Message', required='required', data-validation-required-message='Please enter a message.')
+									p.help-block.text-danger
+							br
+							#success
+							.form-group
+								button.btn.btn-primary.btn-xl(href='#' type='submit') Send
+		// Footer
+footer.footer.text-center
+			.container
+				.row
+					.col-md-4.mb-5.mb-lg-0
+						h4.text-uppercase.mb-4 Location
+						p.lead.mb-0
+							| Palestine - Gaza 
+							br
+							| Rafah 
+					.col-md-4.mb-5.mb-lg-0
+						h4.text-uppercase.mb-4 Follow Me On 
+						ul.list-inline.mb-0
+							li.list-inline-item
+								a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='https://www.facebook.com/EpicCode97')
+									i.fa.fa-fw.fa-facebook
+							li.list-inline-item
+								a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='https://twitter.com/engabdullah_rt')
+									i.fa.fa-fw.fa-twitter
+							li.list-inline-item
+								a.btn.btn-outline-light.btn-social.text-center.rounded-circle(href='https://www.linkedin.com/in/abdullh-rtima-ab606211b/')
+									i.fa.fa-fw.fa-linkedin
+					.col-md-4
+						h4.text-uppercase.mb-4 About This website
+						p.lead.mb-0
+							| This website created by Abdullah Rtima visit my github page to see more project  
+							a(href='https://github.com/AbdullhRtima') Abdullah Rtima github
+							| .
+		.copyright.py-4.text-center.text-white
+			.container
+				small Copyright © Abdullah Rtima  2018
+		// Scroll to Top Button (Only visible on small and extra-small screen sizes)
+		.scroll-to-top.d-lg-none.position-fixed
+			a.js-scroll-trigger.d-block.text-center.text-white.rounded(href='#page-top')
+				i.fa.fa-chevron-up
+// Bootstrap core JavaScript
+script(src='vendor/jquery/jquery.min.js')
+script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+// Plugin JavaScript
+script(src='vendor/jquery-easing/jquery.easing.min.js')
+script(src='vendor/magnific-popup/jquery.magnific-popup.min.js')
+// Contact Form JavaScript
+script(src='/javascripts/jqBootstrapValidation.js')
+script(src='/javascripts/contact_me.js')
+// Custom scripts for this template
+script(src='/javascripts/freelancer.min.js')

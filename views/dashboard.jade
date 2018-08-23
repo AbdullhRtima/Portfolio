@@ -1,0 +1,27 @@
+extends layout2
+
+block content
+ br
+ br 
+ h2 Dashboard 
+ br 
+ br 
+ table.table.table-striped
+  tr 
+    th ID
+    th Project Name
+    th Service
+    th 
+    th 
+  each row, i in rows
+   tr 
+    td #{row.id}
+    td #{row.title}
+    td #{row.service}
+    td 
+      a.btn.btn-primary(href='edit/#{row.id}') Edit
+    td
+      a.btn.btn-danger(href='/admin/delete/#{row.id}') Delete
+    
+ script(src='/vendor/jquery/jquery.min.js')  
+ script(src='/javascripts/dashboard.js') 
